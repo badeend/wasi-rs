@@ -12319,7 +12319,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.local-address"]
+                            #[link_name = "[get]udp-socket.local-address"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12423,7 +12423,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.remote-address"]
+                            #[link_name = "[get]udp-socket.remote-address"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12514,7 +12514,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.address-family"]
+                            #[link_name = "[get]udp-socket.address-family"]
                             fn wit_import0(_: i32) -> i32;
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12547,7 +12547,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.unicast-hop-limit"]
+                            #[link_name = "[get]udp-socket.unicast-hop-limit"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12592,7 +12592,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.set-unicast-hop-limit"]
+                            #[link_name = "[set]udp-socket.unicast-hop-limit"]
                             fn wit_import1(_: i32, _: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12644,7 +12644,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.receive-buffer-size"]
+                            #[link_name = "[get]udp-socket.receive-buffer-size"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12692,7 +12692,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.set-receive-buffer-size"]
+                            #[link_name = "[set]udp-socket.receive-buffer-size"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12734,7 +12734,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.send-buffer-size"]
+                            #[link_name = "[get]udp-socket.send-buffer-size"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -12779,7 +12779,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/udp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]udp-socket.set-send-buffer-size"]
+                            #[link_name = "[set]udp-socket.send-buffer-size"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14142,7 +14142,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.local-address"]
+                            #[link_name = "[get]tcp-socket.local-address"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14246,7 +14246,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.remote-address"]
+                            #[link_name = "[get]tcp-socket.remote-address"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14337,7 +14337,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.is-listening"]
+                            #[link_name = "[get]tcp-socket.is-listening"]
                             fn wit_import0(_: i32) -> i32;
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14359,7 +14359,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.address-family"]
+                            #[link_name = "[get]tcp-socket.address-family"]
                             fn wit_import0(_: i32) -> i32;
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14398,7 +14398,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-listen-backlog-size"]
+                            #[link_name = "[set]tcp-socket.listen-backlog-size"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14449,7 +14449,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.keep-alive-enabled"]
+                            #[link_name = "[get]tcp-socket.keep-alive-enabled"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14497,7 +14497,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-keep-alive-enabled"]
+                            #[link_name = "[set]tcp-socket.keep-alive-enabled"]
                             fn wit_import1(_: i32, _: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14556,7 +14556,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.keep-alive-idle-time"]
+                            #[link_name = "[get]tcp-socket.keep-alive-idle-time"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14604,7 +14604,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-keep-alive-idle-time"]
+                            #[link_name = "[set]tcp-socket.keep-alive-idle-time"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14656,7 +14656,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.keep-alive-interval"]
+                            #[link_name = "[get]tcp-socket.keep-alive-interval"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14704,7 +14704,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-keep-alive-interval"]
+                            #[link_name = "[set]tcp-socket.keep-alive-interval"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14756,7 +14756,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.keep-alive-count"]
+                            #[link_name = "[get]tcp-socket.keep-alive-count"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14801,7 +14801,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-keep-alive-count"]
+                            #[link_name = "[set]tcp-socket.keep-alive-count"]
                             fn wit_import1(_: i32, _: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14849,7 +14849,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.hop-limit"]
+                            #[link_name = "[get]tcp-socket.hop-limit"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14894,7 +14894,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-hop-limit"]
+                            #[link_name = "[set]tcp-socket.hop-limit"]
                             fn wit_import1(_: i32, _: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14946,7 +14946,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.receive-buffer-size"]
+                            #[link_name = "[get]tcp-socket.receive-buffer-size"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -14994,7 +14994,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-receive-buffer-size"]
+                            #[link_name = "[set]tcp-socket.receive-buffer-size"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -15036,7 +15036,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.send-buffer-size"]
+                            #[link_name = "[get]tcp-socket.send-buffer-size"]
                             fn wit_import1(_: i32, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -15081,7 +15081,7 @@ pub mod wasi {
                         #[cfg(target_arch = "wasm32")]
                         #[link(wasm_import_module = "wasi:sockets/tcp@0.2.3")]
                         extern "C" {
-                            #[link_name = "[method]tcp-socket.set-send-buffer-size"]
+                            #[link_name = "[set]tcp-socket.send-buffer-size"]
                             fn wit_import1(_: i32, _: i64, _: *mut u8);
                         }
                         #[cfg(not(target_arch = "wasm32"))]
@@ -15747,8 +15747,8 @@ mod _rt {
 )]
 #[doc(hidden)]
 #[allow(clippy::octal_escapes)]
-pub static __WIT_BINDGEN_COMPONENT_TYPE: [u8; 15623] = *b"\
-\0asm\x0d\0\x01\0\0\x19\x16wit-component-encoding\x04\0\x07\x88y\x01A\x02\x01AO\x01\
+pub static __WIT_BINDGEN_COMPONENT_TYPE: [u8; 15495] = *b"\
+\0asm\x0d\0\x01\0\0\x19\x16wit-component-encoding\x04\0\x07\x88x\x01A\x02\x01AO\x01\
 B\x0a\x04\0\x08pollable\x03\x01\x01h\0\x01@\x01\x04self\x01\0\x7f\x04\0\x16[meth\
 od]pollable.ready\x01\x02\x01@\x01\x04self\x01\x01\0\x04\0\x16[method]pollable.b\
 lock\x01\x03\x01p\x01\x01py\x01@\x01\x02in\x04\0\x05\x04\0\x04poll\x01\x06\x03\0\
@@ -15984,81 +15984,80 @@ local-address\x07\0\x15\x04\0\x1d[method]udp-socket.start-bind\x01\x16\x01@\x01\
 self\x13\0\x15\x04\0\x1e[method]udp-socket.finish-bind\x01\x17\x01i\x11\x01i\x12\
 \x01o\x02\x18\x19\x01j\x01\x1a\x01\x05\x01@\x02\x04self\x13\x0eremote-address\x0d\
 \0\x1b\x04\0\x19[method]udp-socket.stream\x01\x1c\x01j\x01\x07\x01\x05\x01@\x01\x04\
-self\x13\0\x1d\x04\0\x20[method]udp-socket.local-address\x01\x1e\x04\0![method]u\
-dp-socket.remote-address\x01\x1e\x01@\x01\x04self\x13\0\x09\x04\0![method]udp-so\
-cket.address-family\x01\x1f\x01j\x01}\x01\x05\x01@\x01\x04self\x13\0\x20\x04\0$[\
-method]udp-socket.unicast-hop-limit\x01!\x01@\x02\x04self\x13\x05value}\0\x15\x04\
-\0([method]udp-socket.set-unicast-hop-limit\x01\"\x01j\x01w\x01\x05\x01@\x01\x04\
-self\x13\0#\x04\0&[method]udp-socket.receive-buffer-size\x01$\x01@\x02\x04self\x13\
-\x05valuew\0\x15\x04\0*[method]udp-socket.set-receive-buffer-size\x01%\x04\0#[me\
-thod]udp-socket.send-buffer-size\x01$\x04\0'[method]udp-socket.set-send-buffer-s\
-ize\x01%\x01i\x01\x01@\x01\x04self\x13\0&\x04\0\x1c[method]udp-socket.subscribe\x01\
-'\x01h\x11\x01p\x0c\x01j\x01)\x01\x05\x01@\x02\x04self(\x0bmax-resultsw\0*\x04\0\
-([method]incoming-datagram-stream.receive\x01+\x01@\x01\x04self(\0&\x04\0*[metho\
-d]incoming-datagram-stream.subscribe\x01,\x01h\x12\x01@\x01\x04self-\0#\x04\0+[m\
-ethod]outgoing-datagram-stream.check-send\x01.\x01p\x0f\x01@\x02\x04self-\x09dat\
-agrams/\0#\x04\0%[method]outgoing-datagram-stream.send\x010\x01@\x01\x04self-\0&\
-\x04\0*[method]outgoing-datagram-stream.subscribe\x011\x03\0\x16wasi:sockets/udp\
-@0.2.3\x05'\x02\x03\0\x15\x0audp-socket\x01B\x0c\x02\x03\x02\x01\"\x04\0\x07netw\
-ork\x03\0\0\x02\x03\x02\x01$\x04\0\x0aerror-code\x03\0\x02\x02\x03\x02\x01&\x04\0\
-\x11ip-address-family\x03\0\x04\x02\x03\x02\x01(\x04\0\x0audp-socket\x03\0\x06\x01\
-i\x07\x01j\x01\x08\x01\x03\x01@\x01\x0eaddress-family\x05\0\x09\x04\0\x11create-\
-udp-socket\x01\x0a\x03\0$wasi:sockets/udp-create-socket@0.2.3\x05)\x01BT\x02\x03\
-\x02\x01\x07\x04\0\x0cinput-stream\x03\0\0\x02\x03\x02\x01\x08\x04\0\x0doutput-s\
-tream\x03\0\x02\x02\x03\x02\x01\x01\x04\0\x08pollable\x03\0\x04\x02\x03\x02\x01\x06\
-\x04\0\x08duration\x03\0\x06\x02\x03\x02\x01\"\x04\0\x07network\x03\0\x08\x02\x03\
-\x02\x01$\x04\0\x0aerror-code\x03\0\x0a\x02\x03\x02\x01%\x04\0\x11ip-socket-addr\
-ess\x03\0\x0c\x02\x03\x02\x01&\x04\0\x11ip-address-family\x03\0\x0e\x01m\x03\x07\
-receive\x04send\x04both\x04\0\x0dshutdown-type\x03\0\x10\x04\0\x0atcp-socket\x03\
-\x01\x01h\x12\x01h\x09\x01j\0\x01\x0b\x01@\x03\x04self\x13\x07network\x14\x0dloc\
-al-address\x0d\0\x15\x04\0\x1d[method]tcp-socket.start-bind\x01\x16\x01@\x01\x04\
-self\x13\0\x15\x04\0\x1e[method]tcp-socket.finish-bind\x01\x17\x01@\x03\x04self\x13\
-\x07network\x14\x0eremote-address\x0d\0\x15\x04\0\x20[method]tcp-socket.start-co\
-nnect\x01\x18\x01i\x01\x01i\x03\x01o\x02\x19\x1a\x01j\x01\x1b\x01\x0b\x01@\x01\x04\
-self\x13\0\x1c\x04\0![method]tcp-socket.finish-connect\x01\x1d\x04\0\x1f[method]\
-tcp-socket.start-listen\x01\x17\x04\0\x20[method]tcp-socket.finish-listen\x01\x17\
-\x01i\x12\x01o\x03\x1e\x19\x1a\x01j\x01\x1f\x01\x0b\x01@\x01\x04self\x13\0\x20\x04\
-\0\x19[method]tcp-socket.accept\x01!\x01j\x01\x0d\x01\x0b\x01@\x01\x04self\x13\0\
-\"\x04\0\x20[method]tcp-socket.local-address\x01#\x04\0![method]tcp-socket.remot\
-e-address\x01#\x01@\x01\x04self\x13\0\x7f\x04\0\x1f[method]tcp-socket.is-listeni\
-ng\x01$\x01@\x01\x04self\x13\0\x0f\x04\0![method]tcp-socket.address-family\x01%\x01\
-@\x02\x04self\x13\x05valuew\0\x15\x04\0*[method]tcp-socket.set-listen-backlog-si\
-ze\x01&\x01j\x01\x7f\x01\x0b\x01@\x01\x04self\x13\0'\x04\0%[method]tcp-socket.ke\
-ep-alive-enabled\x01(\x01@\x02\x04self\x13\x05value\x7f\0\x15\x04\0)[method]tcp-\
-socket.set-keep-alive-enabled\x01)\x01j\x01\x07\x01\x0b\x01@\x01\x04self\x13\0*\x04\
-\0'[method]tcp-socket.keep-alive-idle-time\x01+\x01@\x02\x04self\x13\x05value\x07\
-\0\x15\x04\0+[method]tcp-socket.set-keep-alive-idle-time\x01,\x04\0&[method]tcp-\
-socket.keep-alive-interval\x01+\x04\0*[method]tcp-socket.set-keep-alive-interval\
-\x01,\x01j\x01y\x01\x0b\x01@\x01\x04self\x13\0-\x04\0#[method]tcp-socket.keep-al\
-ive-count\x01.\x01@\x02\x04self\x13\x05valuey\0\x15\x04\0'[method]tcp-socket.set\
--keep-alive-count\x01/\x01j\x01}\x01\x0b\x01@\x01\x04self\x13\00\x04\0\x1c[metho\
-d]tcp-socket.hop-limit\x011\x01@\x02\x04self\x13\x05value}\0\x15\x04\0\x20[metho\
-d]tcp-socket.set-hop-limit\x012\x01j\x01w\x01\x0b\x01@\x01\x04self\x13\03\x04\0&\
-[method]tcp-socket.receive-buffer-size\x014\x04\0*[method]tcp-socket.set-receive\
--buffer-size\x01&\x04\0#[method]tcp-socket.send-buffer-size\x014\x04\0'[method]t\
-cp-socket.set-send-buffer-size\x01&\x01i\x05\x01@\x01\x04self\x13\05\x04\0\x1c[m\
-ethod]tcp-socket.subscribe\x016\x01@\x02\x04self\x13\x0dshutdown-type\x11\0\x15\x04\
-\0\x1b[method]tcp-socket.shutdown\x017\x03\0\x16wasi:sockets/tcp@0.2.3\x05*\x02\x03\
-\0\x17\x0atcp-socket\x01B\x0c\x02\x03\x02\x01\"\x04\0\x07network\x03\0\0\x02\x03\
-\x02\x01$\x04\0\x0aerror-code\x03\0\x02\x02\x03\x02\x01&\x04\0\x11ip-address-fam\
-ily\x03\0\x04\x02\x03\x02\x01+\x04\0\x0atcp-socket\x03\0\x06\x01i\x07\x01j\x01\x08\
-\x01\x03\x01@\x01\x0eaddress-family\x05\0\x09\x04\0\x11create-tcp-socket\x01\x0a\
-\x03\0$wasi:sockets/tcp-create-socket@0.2.3\x05,\x02\x03\0\x13\x0aip-address\x01\
-B\x16\x02\x03\x02\x01\x01\x04\0\x08pollable\x03\0\0\x02\x03\x02\x01\"\x04\0\x07n\
-etwork\x03\0\x02\x02\x03\x02\x01$\x04\0\x0aerror-code\x03\0\x04\x02\x03\x02\x01-\
-\x04\0\x0aip-address\x03\0\x06\x04\0\x16resolve-address-stream\x03\x01\x01h\x08\x01\
-k\x07\x01j\x01\x0a\x01\x05\x01@\x01\x04self\x09\0\x0b\x04\03[method]resolve-addr\
-ess-stream.resolve-next-address\x01\x0c\x01i\x01\x01@\x01\x04self\x09\0\x0d\x04\0\
-([method]resolve-address-stream.subscribe\x01\x0e\x01h\x03\x01i\x08\x01j\x01\x10\
-\x01\x05\x01@\x02\x07network\x0f\x04names\0\x11\x04\0\x11resolve-addresses\x01\x12\
-\x03\0!wasi:sockets/ip-name-lookup@0.2.3\x05.\x01B\x05\x01p}\x01@\x01\x03lenw\0\0\
-\x04\0\x10get-random-bytes\x01\x01\x01@\0\0w\x04\0\x0eget-random-u64\x01\x02\x03\
-\0\x18wasi:random/random@0.2.3\x05/\x01B\x05\x01p}\x01@\x01\x03lenw\0\0\x04\0\x19\
-get-insecure-random-bytes\x01\x01\x01@\0\0w\x04\0\x17get-insecure-random-u64\x01\
-\x02\x03\0\x1awasi:random/insecure@0.2.3\x050\x01B\x03\x01o\x02ww\x01@\0\0\0\x04\
-\0\x0dinsecure-seed\x01\x01\x03\0\x1fwasi:random/insecure-seed@0.2.3\x051\x04\0\x12\
-rust:wasi/bindings\x04\0\x0b\x0e\x01\0\x08bindings\x03\0\0\0G\x09producers\x01\x0c\
-processed-by\x02\x0dwit-component\x070.224.0\x10wit-bindgen-rust\x060.38.0";
+self\x13\0\x1d\x04\0\x1d[get]udp-socket.local-address\x01\x1e\x04\0\x1e[get]udp-\
+socket.remote-address\x01\x1e\x01@\x01\x04self\x13\0\x09\x04\0\x1e[get]udp-socke\
+t.address-family\x01\x1f\x01j\x01}\x01\x05\x01@\x01\x04self\x13\0\x20\x04\0![get\
+]udp-socket.unicast-hop-limit\x01!\x01@\x02\x04self\x13\x05value}\0\x15\x04\0![s\
+et]udp-socket.unicast-hop-limit\x01\"\x01j\x01w\x01\x05\x01@\x01\x04self\x13\0#\x04\
+\0#[get]udp-socket.receive-buffer-size\x01$\x01@\x02\x04self\x13\x05valuew\0\x15\
+\x04\0#[set]udp-socket.receive-buffer-size\x01%\x04\0\x20[get]udp-socket.send-bu\
+ffer-size\x01$\x04\0\x20[set]udp-socket.send-buffer-size\x01%\x01i\x01\x01@\x01\x04\
+self\x13\0&\x04\0\x1c[method]udp-socket.subscribe\x01'\x01h\x11\x01p\x0c\x01j\x01\
+)\x01\x05\x01@\x02\x04self(\x0bmax-resultsw\0*\x04\0([method]incoming-datagram-s\
+tream.receive\x01+\x01@\x01\x04self(\0&\x04\0*[method]incoming-datagram-stream.s\
+ubscribe\x01,\x01h\x12\x01@\x01\x04self-\0#\x04\0+[method]outgoing-datagram-stre\
+am.check-send\x01.\x01p\x0f\x01@\x02\x04self-\x09datagrams/\0#\x04\0%[method]out\
+going-datagram-stream.send\x010\x01@\x01\x04self-\0&\x04\0*[method]outgoing-data\
+gram-stream.subscribe\x011\x03\0\x16wasi:sockets/udp@0.2.3\x05'\x02\x03\0\x15\x0a\
+udp-socket\x01B\x0c\x02\x03\x02\x01\"\x04\0\x07network\x03\0\0\x02\x03\x02\x01$\x04\
+\0\x0aerror-code\x03\0\x02\x02\x03\x02\x01&\x04\0\x11ip-address-family\x03\0\x04\
+\x02\x03\x02\x01(\x04\0\x0audp-socket\x03\0\x06\x01i\x07\x01j\x01\x08\x01\x03\x01\
+@\x01\x0eaddress-family\x05\0\x09\x04\0\x11create-udp-socket\x01\x0a\x03\0$wasi:\
+sockets/udp-create-socket@0.2.3\x05)\x01BT\x02\x03\x02\x01\x07\x04\0\x0cinput-st\
+ream\x03\0\0\x02\x03\x02\x01\x08\x04\0\x0doutput-stream\x03\0\x02\x02\x03\x02\x01\
+\x01\x04\0\x08pollable\x03\0\x04\x02\x03\x02\x01\x06\x04\0\x08duration\x03\0\x06\
+\x02\x03\x02\x01\"\x04\0\x07network\x03\0\x08\x02\x03\x02\x01$\x04\0\x0aerror-co\
+de\x03\0\x0a\x02\x03\x02\x01%\x04\0\x11ip-socket-address\x03\0\x0c\x02\x03\x02\x01\
+&\x04\0\x11ip-address-family\x03\0\x0e\x01m\x03\x07receive\x04send\x04both\x04\0\
+\x0dshutdown-type\x03\0\x10\x04\0\x0atcp-socket\x03\x01\x01h\x12\x01h\x09\x01j\0\
+\x01\x0b\x01@\x03\x04self\x13\x07network\x14\x0dlocal-address\x0d\0\x15\x04\0\x1d\
+[method]tcp-socket.start-bind\x01\x16\x01@\x01\x04self\x13\0\x15\x04\0\x1e[metho\
+d]tcp-socket.finish-bind\x01\x17\x01@\x03\x04self\x13\x07network\x14\x0eremote-a\
+ddress\x0d\0\x15\x04\0\x20[method]tcp-socket.start-connect\x01\x18\x01i\x01\x01i\
+\x03\x01o\x02\x19\x1a\x01j\x01\x1b\x01\x0b\x01@\x01\x04self\x13\0\x1c\x04\0![met\
+hod]tcp-socket.finish-connect\x01\x1d\x04\0\x1f[method]tcp-socket.start-listen\x01\
+\x17\x04\0\x20[method]tcp-socket.finish-listen\x01\x17\x01i\x12\x01o\x03\x1e\x19\
+\x1a\x01j\x01\x1f\x01\x0b\x01@\x01\x04self\x13\0\x20\x04\0\x19[method]tcp-socket\
+.accept\x01!\x01j\x01\x0d\x01\x0b\x01@\x01\x04self\x13\0\"\x04\0\x1d[get]tcp-soc\
+ket.local-address\x01#\x04\0\x1e[get]tcp-socket.remote-address\x01#\x01@\x01\x04\
+self\x13\0\x7f\x04\0\x1c[get]tcp-socket.is-listening\x01$\x01@\x01\x04self\x13\0\
+\x0f\x04\0\x1e[get]tcp-socket.address-family\x01%\x01@\x02\x04self\x13\x05valuew\
+\0\x15\x04\0#[set]tcp-socket.listen-backlog-size\x01&\x01j\x01\x7f\x01\x0b\x01@\x01\
+\x04self\x13\0'\x04\0\"[get]tcp-socket.keep-alive-enabled\x01(\x01@\x02\x04self\x13\
+\x05value\x7f\0\x15\x04\0\"[set]tcp-socket.keep-alive-enabled\x01)\x01j\x01\x07\x01\
+\x0b\x01@\x01\x04self\x13\0*\x04\0$[get]tcp-socket.keep-alive-idle-time\x01+\x01\
+@\x02\x04self\x13\x05value\x07\0\x15\x04\0$[set]tcp-socket.keep-alive-idle-time\x01\
+,\x04\0#[get]tcp-socket.keep-alive-interval\x01+\x04\0#[set]tcp-socket.keep-aliv\
+e-interval\x01,\x01j\x01y\x01\x0b\x01@\x01\x04self\x13\0-\x04\0\x20[get]tcp-sock\
+et.keep-alive-count\x01.\x01@\x02\x04self\x13\x05valuey\0\x15\x04\0\x20[set]tcp-\
+socket.keep-alive-count\x01/\x01j\x01}\x01\x0b\x01@\x01\x04self\x13\00\x04\0\x19\
+[get]tcp-socket.hop-limit\x011\x01@\x02\x04self\x13\x05value}\0\x15\x04\0\x19[se\
+t]tcp-socket.hop-limit\x012\x01j\x01w\x01\x0b\x01@\x01\x04self\x13\03\x04\0#[get\
+]tcp-socket.receive-buffer-size\x014\x04\0#[set]tcp-socket.receive-buffer-size\x01\
+&\x04\0\x20[get]tcp-socket.send-buffer-size\x014\x04\0\x20[set]tcp-socket.send-b\
+uffer-size\x01&\x01i\x05\x01@\x01\x04self\x13\05\x04\0\x1c[method]tcp-socket.sub\
+scribe\x016\x01@\x02\x04self\x13\x0dshutdown-type\x11\0\x15\x04\0\x1b[method]tcp\
+-socket.shutdown\x017\x03\0\x16wasi:sockets/tcp@0.2.3\x05*\x02\x03\0\x17\x0atcp-\
+socket\x01B\x0c\x02\x03\x02\x01\"\x04\0\x07network\x03\0\0\x02\x03\x02\x01$\x04\0\
+\x0aerror-code\x03\0\x02\x02\x03\x02\x01&\x04\0\x11ip-address-family\x03\0\x04\x02\
+\x03\x02\x01+\x04\0\x0atcp-socket\x03\0\x06\x01i\x07\x01j\x01\x08\x01\x03\x01@\x01\
+\x0eaddress-family\x05\0\x09\x04\0\x11create-tcp-socket\x01\x0a\x03\0$wasi:socke\
+ts/tcp-create-socket@0.2.3\x05,\x02\x03\0\x13\x0aip-address\x01B\x16\x02\x03\x02\
+\x01\x01\x04\0\x08pollable\x03\0\0\x02\x03\x02\x01\"\x04\0\x07network\x03\0\x02\x02\
+\x03\x02\x01$\x04\0\x0aerror-code\x03\0\x04\x02\x03\x02\x01-\x04\0\x0aip-address\
+\x03\0\x06\x04\0\x16resolve-address-stream\x03\x01\x01h\x08\x01k\x07\x01j\x01\x0a\
+\x01\x05\x01@\x01\x04self\x09\0\x0b\x04\03[method]resolve-address-stream.resolve\
+-next-address\x01\x0c\x01i\x01\x01@\x01\x04self\x09\0\x0d\x04\0([method]resolve-\
+address-stream.subscribe\x01\x0e\x01h\x03\x01i\x08\x01j\x01\x10\x01\x05\x01@\x02\
+\x07network\x0f\x04names\0\x11\x04\0\x11resolve-addresses\x01\x12\x03\0!wasi:soc\
+kets/ip-name-lookup@0.2.3\x05.\x01B\x05\x01p}\x01@\x01\x03lenw\0\0\x04\0\x10get-\
+random-bytes\x01\x01\x01@\0\0w\x04\0\x0eget-random-u64\x01\x02\x03\0\x18wasi:ran\
+dom/random@0.2.3\x05/\x01B\x05\x01p}\x01@\x01\x03lenw\0\0\x04\0\x19get-insecure-\
+random-bytes\x01\x01\x01@\0\0w\x04\0\x17get-insecure-random-u64\x01\x02\x03\0\x1a\
+wasi:random/insecure@0.2.3\x050\x01B\x03\x01o\x02ww\x01@\0\0\0\x04\0\x0dinsecure\
+-seed\x01\x01\x03\0\x1fwasi:random/insecure-seed@0.2.3\x051\x04\0\x12rust:wasi/b\
+indings\x04\0\x0b\x0e\x01\0\x08bindings\x03\0\0\0G\x09producers\x01\x0cprocessed\
+-by\x02\x0dwit-component\x070.224.0\x10wit-bindgen-rust\x060.38.0";
 #[inline(never)]
 #[doc(hidden)]
 pub fn __link_custom_section_describing_imports() {
